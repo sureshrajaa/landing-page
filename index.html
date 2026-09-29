@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-plore | Holidays feel like a movie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+    <source src="Tamil Songs (1).mp3" type="audio/mpeg">
+    </audio>
+  
+    <nav>
+    <div class="brand">
+    <a href="#top" class="brand">
+    <img src="logo.jpg" alt="Ex-plore Holiday Logo">
+    </a>
+    <div class="brand-text">
+        <b>Ex<span>-</span>plore</b>
+        <small>HOLIDAY</small>
+    </div>
+    </div>
+
+    <div>
+        <a href="#places">Places</a>
+        <a href="#plan">Plan Trip</a>
+        <a href="#gallery">Gallery</a>
+    </div>
+    </nav>
+
+    <header class="hero">
+        <section id="places">
+
+    <h2>Where to next?</h2>
+
+    <div class="slider">
+
+        <article class="slide">
+            <img src="Ooty.jpg" alt="Ooty">
+            <h3>Ooty</h3>
+        </article>
+
+        <article class="slide">
+            <img src="Munnar.jpg" alt="Munnar">
+            <h3>Munnar</h3>
+        </article>
+
+        <article class="slide">
+            <img src="bali.jpg" alt="Bali">
+            <h3>Bali</h3>
+        </article>
+
+    </div>
+
+</section>
+        <div class="shade"></div>
+        <div class="hero-text">
+            <h1>Don't just travel.<br><em>Ex-plore.</em></h1>
+            <a class="btn" href="#places">Discover</a>
+        </div>
+    </header>
+    <section id="places">
+        <h2 class="reveal">Where to next?</h2>
+        <div class="slide reveal">
+        <div class="slide"><img src="Ooty.jpg" alt="Ooty"><h3>Ooty</h3></div>
+        <div class="slide"><img src="bali.jpg" alt="Bali"><h3>Bali</h3></div>
+        <div class="slide"><img src=".jpg" alt="Munnar.jpg"><h3>Munnar</h3></div>
+        </div>
+    </section>
+
+    <section class="parallax"><h2 class="reveal">Make memories,not plans.</h2></section>
+        <section id="plan">
+
+    <div class="plan-box">
+
+        <div class="plan-content">
+
+            <p class="small-title">YOUR NEXT ADVENTURE</p>
+
+            <h2>Plan your trip.</h2>
+
+            <p>
+                Choose your destination, dates and trip details.
+                Let's turn your travel idea into a plan.
+            </p>
+
+        </div>
+
+        <form class="trip-form">
+
+            <label for="destination">Destination</label>
+
+            <select id="destination">
+                <option value="">Choose a destination</option>
+                <option>Ooty</option>
+                <option>Munnar</option>
+                <option>Bali</option>
+            </select>
+
+            <label for="date">Travel date</label>
+
+            <input type="date" id="date">
+
+            <label for="travellers">Travellers</label>
+
+            <select id="travellers">
+                <option>1 Traveller</option>
+                <option selected>2 Travellers</option>
+                <option>3 Travellers</option>
+                <option>4 Travellers</option>
+                <option>5+ Travellers</option>
+            </select>
+
+            <label for="duration">Duration</label>
+
+            <select id="duration">
+                <option>1 Day</option>
+                <option>2 Days</option>
+                <option selected>3 Days</option>
+                <option>4 Days</option>
+                <option>5 Days</option>
+                <option>1 Week</option>
+            </select>
+
+            <button type="submit" class="plan-btn">
+                Create My Trip →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <section id="gallery">
+
+    <h2>Gallery</h2>
+
+    <div class="thumbs">
+
+        <a href="#p1">
+            <img src="Ooty.jpg" alt="Ooty">
+        </a>
+
+        <a href="#p2">
+            <img src="Munnar.jpg" alt="Munnar">
+        </a>
+
+        <a href="#p3">
+            <img src="bali.jpg" alt="Bali">
+        </a>
+
+    </div>
+
+</section>
+
+
+    <div class="lightbox" id="p1"><a href="#gallery">&times;</a><img src="Ooty.jpg" alt=""></div>
+    <div class="lightbox" id="p2"><a href="#gallery">&times;</a><img src="bali.jpg" alt=""></div>
+    <div class="lightbox" id="p3"><a href="#gallery">&times;</a><img src="Munnar.jpg" alt=""></div>
+
+
+    <footer>&copy; 2026 Ex-plore</footer>
+    <script>
+    const music = document.getElementById("bgMusic");
+
+    document.addEventListener("click", function () {
+        music.play();
+    }, { once: true });
+</script>
+</body>
+</html>
